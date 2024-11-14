@@ -7,6 +7,10 @@ authors = ["Egor <egorkononec64@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+playwright = "^1.48.0"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+aiogram = "^3.14.0"
 
 
 [tool.poetry.scripts]
