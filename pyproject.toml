@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ticket-bot"
+version = "0.1.0"
+description = ""
+authors = ["Egor <egorkononec64@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.scripts]
+dev = "main:start_dev"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
