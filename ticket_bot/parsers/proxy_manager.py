@@ -6,7 +6,7 @@ import re
 
 from typing import AsyncGenerator
 
-from user_agents import user_agents
+from .user_agents import user_agents
 import random
 
 

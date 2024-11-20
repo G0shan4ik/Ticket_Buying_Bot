@@ -1,8 +1,7 @@
 import asyncio
-from idlelib.window import add_windows_to_menu
 
 from loguru import logger
-from base import BaseParser
+from .base import BaseParser
 from playwright.async_api import Page, BrowserContext
 
 

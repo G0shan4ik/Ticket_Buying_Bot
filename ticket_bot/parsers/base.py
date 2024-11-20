@@ -1,11 +1,10 @@
 from abc import ABC, abstractmethod
 
-from Tools.i18n.makelocalealias import pprint
 from playwright.async_api import async_playwright, Page, BrowserContext
 
 from pprint import pprint
 
-from proxy_manager import ProxyManager
+from .proxy_manager import ProxyManager
 from loguru import logger
 
 

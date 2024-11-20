@@ -13,6 +13,10 @@ async def set_commands(bot: Bot = bot_):
             command="add_filter",
             description="Установить мониторинг по фильтру."
         ),
+        BotCommand(
+            command="all_filters",
+            description="Список установленных фильтров."
+        )
     ]
 
     await bot.set_my_commands(
