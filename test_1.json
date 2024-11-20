@@ -1,0 +1,656 @@
+{
+    "response": {
+        "type": "events",
+        "page": 1,
+        "page_count": 1,
+        "items": [
+            {
+                "time": 1731790800,
+                "date": "2024-11-17 00:00:00",
+                "day_of_week": "воскресенье",
+                "day_of_month": "17",
+                "month": "ноября",
+                "month_base_form": "Ноябрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3182",
+                        "begin_date": "2024-11-17 14:00:00",
+                        "begin_time": "14:00",
+                        "date_formatted": "17 ноября 2024, вс, 14:00",
+                        "date_parts": {
+                            "date": "17 ноября 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 1,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "17 ноября 2024, 14:00",
+                            "first_event_date": "2024-11-17 14:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3170",
+                        "begin_date": "2024-11-17 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "17 ноября 2024, вс, 18:00",
+                        "date_parts": {
+                            "date": "17 ноября 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "17 ноября 2024, 18:00",
+                            "first_event_date": "2024-11-17 18:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1732222800,
+                "date": "2024-11-22 00:00:00",
+                "day_of_week": "пятница",
+                "day_of_month": "22",
+                "month": "ноября",
+                "month_base_form": "Ноябрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3171",
+                        "begin_date": "2024-11-22 19:00:00",
+                        "begin_time": "19:00",
+                        "date_formatted": "22 ноября 2024, пт, 19:00",
+                        "date_parts": {
+                            "date": "22 ноября 2024",
+                            "day_of_week": "пт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "22 ноября 2024, 19:00",
+                            "first_event_date": "2024-11-22 19:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1732309200,
+                "date": "2024-11-23 00:00:00",
+                "day_of_week": "суббота",
+                "day_of_month": "23",
+                "month": "ноября",
+                "month_base_form": "Ноябрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3183",
+                        "begin_date": "2024-11-23 14:00:00",
+                        "begin_time": "14:00",
+                        "date_formatted": "23 ноября 2024, сб, 14:00",
+                        "date_parts": {
+                            "date": "23 ноября 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "23 ноября 2024, 14:00",
+                            "first_event_date": "2024-11-23 14:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3184",
+                        "begin_date": "2024-11-23 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "23 ноября 2024, сб, 18:00",
+                        "date_parts": {
+                            "date": "23 ноября 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "23 ноября 2024, 18:00",
+                            "first_event_date": "2024-11-23 18:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1732395600,
+                "date": "2024-11-24 00:00:00",
+                "day_of_week": "воскресенье",
+                "day_of_month": "24",
+                "month": "ноября",
+                "month_base_form": "Ноябрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3185",
+                        "begin_date": "2024-11-24 14:00:00",
+                        "begin_time": "14:00",
+                        "date_formatted": "24 ноября 2024, вс, 14:00",
+                        "date_parts": {
+                            "date": "24 ноября 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "24 ноября 2024, 14:00",
+                            "first_event_date": "2024-11-24 14:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": true,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3135",
+                        "begin_date": "2024-11-24 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "24 ноября 2024, вс, 18:00",
+                        "date_parts": {
+                            "date": "24 ноября 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "МАТРЕШКА",
+                        "show_id": "94",
+                        "show": {
+                            "id": 5950,
+                            "show_id": 94,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "МАТРЕШКА",
+                            "image_url": "https://storage.widget.profticket.ru/show/dc6/dc60ca2c146d994e8da1756aa1f7bfce.png",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "24 ноября 2024, 18:00",
+                            "first_event_date": "2024-11-24 18:00:00",
+                            "date_period_formatted": "16 ноября &mdash; 24 ноября",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            }
+        ],
+        "selected_date": "2024.11"
+    }
+}

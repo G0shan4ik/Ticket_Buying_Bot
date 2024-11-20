@@ -10,21 +10,9 @@ async def set_commands(bot: Bot = bot_):
             description="Запустить бота."
         ),
         BotCommand(
-            command="help",
-            description="Как использовать бота?"
+            command="add_filter",
+            description="Установить мониторинг по фильтру."
         ),
-        # BotCommand(
-        #     command="func_2",
-        #     description="func_2."
-        # ),
-        # BotCommand(
-        #     command="func_2",
-        #     description="func_2."
-        # ),
-        # BotCommand(
-        #     command="func_3",
-        #     description="func_3."
-        # )
     ]
 
     await bot.set_my_commands(

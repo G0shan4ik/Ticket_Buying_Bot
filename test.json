@@ -1,0 +1,3734 @@
+{
+    "response": {
+        "type": "events",
+        "page": 1,
+        "page_count": 1,
+        "items": [
+            {
+                "time": 1734123600,
+                "date": "2024-12-14 00:00:00",
+                "day_of_week": "суббота",
+                "day_of_month": "14",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3078",
+                        "begin_date": "2024-12-14 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "14 декабря 2024, сб, 11:00",
+                        "date_parts": {
+                            "date": "14 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "14 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-14 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3077",
+                        "begin_date": "2024-12-14 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "14 декабря 2024, сб, 14:30",
+                        "date_parts": {
+                            "date": "14 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "14 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-14 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3076",
+                        "begin_date": "2024-12-14 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "14 декабря 2024, сб, 18:00",
+                        "date_parts": {
+                            "date": "14 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "14 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-14 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734210000,
+                "date": "2024-12-15 00:00:00",
+                "day_of_week": "воскресенье",
+                "day_of_month": "15",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3081",
+                        "begin_date": "2024-12-15 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "15 декабря 2024, вс, 11:00",
+                        "date_parts": {
+                            "date": "15 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "15 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-15 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3080",
+                        "begin_date": "2024-12-15 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "15 декабря 2024, вс, 14:30",
+                        "date_parts": {
+                            "date": "15 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "15 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-15 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3079",
+                        "begin_date": "2024-12-15 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "15 декабря 2024, вс, 18:00",
+                        "date_parts": {
+                            "date": "15 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "15 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-15 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734296400,
+                "date": "2024-12-16 00:00:00",
+                "day_of_week": "понедельник",
+                "day_of_month": "16",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3191",
+                        "begin_date": "2024-12-16 14:00:00",
+                        "begin_time": "14:00",
+                        "date_formatted": "16 декабря 2024, пн, 14:00",
+                        "date_parts": {
+                            "date": "16 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "16 декабря 2024, 14:00",
+                            "first_event_date": "2024-12-16 14:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3195",
+                        "begin_date": "2024-12-16 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "16 декабря 2024, пн, 18:00",
+                        "date_parts": {
+                            "date": "16 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "16 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-16 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734382800,
+                "date": "2024-12-17 00:00:00",
+                "day_of_week": "вторник",
+                "day_of_month": "17",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3194",
+                        "begin_date": "2024-12-17 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "17 декабря 2024, вт, 18:00",
+                        "date_parts": {
+                            "date": "17 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "17 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-17 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734469200,
+                "date": "2024-12-18 00:00:00",
+                "day_of_week": "среда",
+                "day_of_month": "18",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3190",
+                        "begin_date": "2024-12-18 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "18 декабря 2024, ср, 18:00",
+                        "date_parts": {
+                            "date": "18 декабря 2024",
+                            "day_of_week": "ср"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "18 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-18 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734555600,
+                "date": "2024-12-19 00:00:00",
+                "day_of_week": "четверг",
+                "day_of_month": "19",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3140",
+                        "begin_date": "2024-12-19 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "19 декабря 2024, чт, 18:00",
+                        "date_parts": {
+                            "date": "19 декабря 2024",
+                            "day_of_week": "чт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "19 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-19 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734642000,
+                "date": "2024-12-20 00:00:00",
+                "day_of_week": "пятница",
+                "day_of_month": "20",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3085",
+                        "begin_date": "2024-12-20 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "20 декабря 2024, пт, 18:00",
+                        "date_parts": {
+                            "date": "20 декабря 2024",
+                            "day_of_week": "пт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 1500,
+                        "max_price": 1500,
+                        "free_places_count": 1,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": true,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "20 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-20 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734728400,
+                "date": "2024-12-21 00:00:00",
+                "day_of_week": "суббота",
+                "day_of_month": "21",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3088",
+                        "begin_date": "2024-12-21 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "21 декабря 2024, сб, 11:00",
+                        "date_parts": {
+                            "date": "21 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "21 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-21 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3087",
+                        "begin_date": "2024-12-21 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "21 декабря 2024, сб, 14:30",
+                        "date_parts": {
+                            "date": "21 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "21 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-21 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734814800,
+                "date": "2024-12-22 00:00:00",
+                "day_of_week": "воскресенье",
+                "day_of_month": "22",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3091",
+                        "begin_date": "2024-12-22 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "22 декабря 2024, вс, 11:00",
+                        "date_parts": {
+                            "date": "22 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "22 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-22 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3090",
+                        "begin_date": "2024-12-22 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "22 декабря 2024, вс, 14:30",
+                        "date_parts": {
+                            "date": "22 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "22 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-22 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3089",
+                        "begin_date": "2024-12-22 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "22 декабря 2024, вс, 18:00",
+                        "date_parts": {
+                            "date": "22 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "22 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-22 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734901200,
+                "date": "2024-12-23 00:00:00",
+                "day_of_week": "понедельник",
+                "day_of_month": "23",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3092",
+                        "begin_date": "2024-12-23 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "23 декабря 2024, пн, 18:00",
+                        "date_parts": {
+                            "date": "23 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "23 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-23 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1734987600,
+                "date": "2024-12-24 00:00:00",
+                "day_of_week": "вторник",
+                "day_of_month": "24",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3215",
+                        "begin_date": "2024-12-24 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "24 декабря 2024, вт, 14:30",
+                        "date_parts": {
+                            "date": "24 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 1500,
+                        "max_price": 3000,
+                        "free_places_count": 5,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": true,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "24 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-24 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3093",
+                        "begin_date": "2024-12-24 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "24 декабря 2024, вт, 18:00",
+                        "date_parts": {
+                            "date": "24 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "24 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-24 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735074000,
+                "date": "2024-12-25 00:00:00",
+                "day_of_week": "среда",
+                "day_of_month": "25",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3209",
+                        "begin_date": "2024-12-25 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "25 декабря 2024, ср, 11:00",
+                        "date_parts": {
+                            "date": "25 декабря 2024",
+                            "day_of_week": "ср"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "25 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-25 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3083",
+                        "begin_date": "2024-12-25 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "25 декабря 2024, ср, 14:30",
+                        "date_parts": {
+                            "date": "25 декабря 2024",
+                            "day_of_week": "ср"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 3000,
+                        "max_price": 3000,
+                        "free_places_count": 1,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": true,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "25 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-25 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3094",
+                        "begin_date": "2024-12-25 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "25 декабря 2024, ср, 18:00",
+                        "date_parts": {
+                            "date": "25 декабря 2024",
+                            "day_of_week": "ср"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "25 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-25 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735160400,
+                "date": "2024-12-26 00:00:00",
+                "day_of_week": "четверг",
+                "day_of_month": "26",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3206",
+                        "begin_date": "2024-12-26 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "26 декабря 2024, чт, 11:00",
+                        "date_parts": {
+                            "date": "26 декабря 2024",
+                            "day_of_week": "чт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 2000,
+                        "max_price": 2000,
+                        "free_places_count": 1,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": true,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "26 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-26 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3082",
+                        "begin_date": "2024-12-26 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "26 декабря 2024, чт, 14:30",
+                        "date_parts": {
+                            "date": "26 декабря 2024",
+                            "day_of_week": "чт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "26 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-26 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3095",
+                        "begin_date": "2024-12-26 19:00:00",
+                        "begin_time": "19:00",
+                        "date_formatted": "26 декабря 2024, чт, 19:00",
+                        "date_parts": {
+                            "date": "26 декабря 2024",
+                            "day_of_week": "чт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "26 декабря 2024, 19:00",
+                            "first_event_date": "2024-12-26 19:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735246800,
+                "date": "2024-12-27 00:00:00",
+                "day_of_week": "пятница",
+                "day_of_month": "27",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3201",
+                        "begin_date": "2024-12-27 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "27 декабря 2024, пт, 11:00",
+                        "date_parts": {
+                            "date": "27 декабря 2024",
+                            "day_of_week": "пт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "27 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-27 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3097",
+                        "begin_date": "2024-12-27 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "27 декабря 2024, пт, 14:30",
+                        "date_parts": {
+                            "date": "27 декабря 2024",
+                            "day_of_week": "пт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "27 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-27 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3096",
+                        "begin_date": "2024-12-27 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "27 декабря 2024, пт, 18:00",
+                        "date_parts": {
+                            "date": "27 декабря 2024",
+                            "day_of_week": "пт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "27 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-27 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735333200,
+                "date": "2024-12-28 00:00:00",
+                "day_of_week": "суббота",
+                "day_of_month": "28",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3084",
+                        "begin_date": "2024-12-28 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "28 декабря 2024, сб, 11:00",
+                        "date_parts": {
+                            "date": "28 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "28 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-28 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3099",
+                        "begin_date": "2024-12-28 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "28 декабря 2024, сб, 14:30",
+                        "date_parts": {
+                            "date": "28 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "28 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-28 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3098",
+                        "begin_date": "2024-12-28 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "28 декабря 2024, сб, 18:00",
+                        "date_parts": {
+                            "date": "28 декабря 2024",
+                            "day_of_week": "сб"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "28 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-28 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735419600,
+                "date": "2024-12-29 00:00:00",
+                "day_of_week": "воскресенье",
+                "day_of_month": "29",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3102",
+                        "begin_date": "2024-12-29 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "29 декабря 2024, вс, 11:00",
+                        "date_parts": {
+                            "date": "29 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "29 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-29 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3101",
+                        "begin_date": "2024-12-29 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "29 декабря 2024, вс, 14:30",
+                        "date_parts": {
+                            "date": "29 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "29 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-29 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3100",
+                        "begin_date": "2024-12-29 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "29 декабря 2024, вс, 18:00",
+                        "date_parts": {
+                            "date": "29 декабря 2024",
+                            "day_of_week": "вс"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "29 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-29 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735506000,
+                "date": "2024-12-30 00:00:00",
+                "day_of_week": "понедельник",
+                "day_of_month": "30",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3105",
+                        "begin_date": "2024-12-30 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "30 декабря 2024, пн, 11:00",
+                        "date_parts": {
+                            "date": "30 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "30 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-30 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3104",
+                        "begin_date": "2024-12-30 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "30 декабря 2024, пн, 14:30",
+                        "date_parts": {
+                            "date": "30 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "30 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-30 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3103",
+                        "begin_date": "2024-12-30 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "30 декабря 2024, пн, 18:00",
+                        "date_parts": {
+                            "date": "30 декабря 2024",
+                            "day_of_week": "пн"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "30 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-30 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            },
+            {
+                "time": 1735592400,
+                "date": "2024-12-31 00:00:00",
+                "day_of_week": "вторник",
+                "day_of_month": "31",
+                "month": "декабря",
+                "month_base_form": "Декабрь",
+                "year": null,
+                "events": [
+                    {
+                        "id": "3108",
+                        "begin_date": "2024-12-31 11:00:00",
+                        "begin_time": "11:00",
+                        "date_formatted": "31 декабря 2024, вт, 11:00",
+                        "date_parts": {
+                            "date": "31 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "31 декабря 2024, 11:00",
+                            "first_event_date": "2024-12-31 11:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3107",
+                        "begin_date": "2024-12-31 14:30:00",
+                        "begin_time": "14:30",
+                        "date_formatted": "31 декабря 2024, вт, 14:30",
+                        "date_parts": {
+                            "date": "31 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "31 декабря 2024, 14:30",
+                            "first_event_date": "2024-12-31 14:30:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    },
+                    {
+                        "id": "3106",
+                        "begin_date": "2024-12-31 18:00:00",
+                        "begin_time": "18:00",
+                        "date_formatted": "31 декабря 2024, вт, 18:00",
+                        "date_parts": {
+                            "date": "31 декабря 2024",
+                            "day_of_week": "вт"
+                        },
+                        "annotation": "",
+                        "information_message": "",
+                        "is_season": false,
+                        "is_set": false,
+                        "is_with_open_date": false,
+                        "has_services": false,
+                        "parent_set_id": null,
+                        "can_by_without_set": false,
+                        "min_price": 0,
+                        "max_price": 0,
+                        "free_places_count": 0,
+                        "location_name": "Московский цирк Никулина на Цветном бульваре",
+                        "location_scene": "Основная сцена",
+                        "max_count_in_order": null,
+                        "max_vip_count_in_order": null,
+                        "max_count_in_order_for_reservation": null,
+                        "email_subscribe_enabled": true,
+                        "sale_stopped": false,
+                        "has_free_places": false,
+                        "show_name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                        "show_id": "96",
+                        "show": {
+                            "id": 6917,
+                            "show_id": 96,
+                            "set_id": null,
+                            "is_private": false,
+                            "is_set": false,
+                            "is_season": false,
+                            "season_company_min_tickets": 0,
+                            "name": "ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+                            "image_url": "https://storage.widget.profticket.ru/show/be4/be4184301f297b593a2edb0ad0975ae8.jpg",
+                            "genre_list": [
+                                {
+                                    "code": "1",
+                                    "name": "Цирковое представление"
+                                }
+                            ],
+                            "scheme_by_sectors": false,
+                            "location_name": "Московский цирк Никулина на Цветном бульваре",
+                            "location_scene": "Основная сцена",
+                            "location_address": "м. Цветной бульвар, Цветной бульвар, 13",
+                            "first_event_date_formatted": "31 декабря 2024, 18:00",
+                            "first_event_date": "2024-12-31 18:00:00",
+                            "date_period_formatted": "14 декабря 2024 &mdash; 19 января 2025",
+                            "is_with_open_date": false,
+                            "open_date_period": {
+                                "from": null,
+                                "to": null
+                            },
+                            "duration": "2 ч",
+                            "age": "0",
+                            "labels": [],
+                            "pushkin_card": {
+                                "can_buy": false
+                            },
+                            "settings": {
+                                "hide_location_and_scene": false
+                            },
+                            "archived": false
+                        },
+                        "show_item": true,
+                        "is_cancelled": false,
+                        "is_qr_code_only": false,
+                        "has_discount_program": false,
+                        "has_loyalty_program": false,
+                        "can_be_paid_by_certificates": false,
+                        "is_private": false,
+                        "custom_button_text": null,
+                        "season_company_min_tickets": 0,
+                        "season_company_info": null,
+                        "pushkin_card": {
+                            "can_buy": false
+                        },
+                        "reservation": {
+                            "group_order_enabled": false
+                        }
+                    }
+                ]
+            }
+        ],
+        "selected_date": "2024.12"
+    }
+}

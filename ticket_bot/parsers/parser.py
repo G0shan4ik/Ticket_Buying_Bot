@@ -1,0 +1,147 @@
+import asyncio
+from idlelib.window import add_windows_to_menu
+
+from loguru import logger
+from base import BaseParser
+from playwright.async_api import Page, BrowserContext
+
+
+class BuyingTicketsNikulina(BaseParser):
+    def __init__(self, event_filter: list[str]):
+        super().__init__(
+            event_filter=event_filter,
+            start_url="https://spa.profticket.ru/customer/53/shows"
+        )
+
+        self.venue = 'Цирк Никулина'
+        self.company_id = 53
+
+    def reformat_sectors(self, sector_name: str) -> bool:
+        """
+            Returns True if the sector_name matches the filter
+        :param sector_name: Sector name (str)
+        :return: bool
+        """
+        if len(self.event_filter) <= 2 or self.event_filter[2] == 'все значения':
+            return True
+        elif ',' in self.event_filter[2]:
+            rng = self.event_filter[2].split(',')
+            if sector_name in [i.strip().lower() for i in rng]:
+                return True
+        elif sector_name == self.event_filter[2].lower():
+            return True
+        return False
+
+    def reformat_rows_or_seats(self, rows_seats: str, rows_seats_name: str) -> bool:
+        """
+            Returns True if the rows_seats matches the filter.
+
+        :param rows_seats: value: 'rows' or 'seats'
+        :param rows_seats_name: number rows or seats
+        :return: bool
+        """
+        num = 3 if rows_seats == 'rows' else 4
+        if len(self.event_filter) <= 3 or self.event_filter[num] == 'все значения':
+            return True
+        elif '-' in self.event_filter[num]:
+            rng = self.event_filter[num].split('-')
+            if int(rows_seats_name) in [i for i in range(int(rng[0]), 1 + int(rng[-1]))]:
+                return True
+        elif ',' in self.event_filter[num]:
+            rng = self.event_filter[num].split(',')
+            if int(rows_seats_name) in [int(i) for i in rng]:
+                return True
+        return False
+
+
+    async def check_relevant_tickets(self, p: Page) -> None:
+        await p.goto(url=self.start_url, wait_until='commit')
+
+        logger.success(f'Start pars {self.start_url}, {self.venue}.')
+
+        for i in self.year_month:
+            try:
+                response = await (await p.request.get(
+                    url=f"https://widget.profticket.ru/api/event/list/?company_id=53&type=events&page=1&period_id=4&date={i}&language=ru-RU"
+                )).json()
+            except:
+                logger.warning(f'Invalid year.month {i}')
+                continue
+
+            await asyncio.sleep(0)
+
+            logger.info(f'Pars event for {i}, {self.venue}.')
+
+            all_page_events = response['response']['items']
+            for item in all_page_events:
+                for event in item['events']:
+                    if event['free_places_count']:
+                        date_formatted = ' '.join(event['date_formatted'].split(', ')[::2]).split()
+                        date_formatted[1] = date_formatted[1][:3]
+                        # if (self.event_name.lower() == event['show_name'].lower() and
+                        #         self.event_date == ' '.join(date_formatted[:-1])):
+                        self.event_id = event['id']
+                        self.show_id = event['show']['id']
+
+                        return
+                await asyncio.sleep(0)
+        logger.warning(f'No tickets were found for the <- {self.event_date, self.event_date} -> event!')
+
+    async def get_tickets(self, p: Page, context: BrowserContext) -> list[dict]:
+        # await p.goto(url=self.start_url, wait_until='commit')
+
+        scheme_url = (f'https://widget.profticket.ru/api/event/scheme/?company_id={self.company_id}&'
+                      f'global_show_id={self.show_id}&event_id={self.event_id}&language=ru-RU')
+        response = await (await p.request.get(
+            url=scheme_url
+        )).json()
+        await asyncio.sleep(0)
+
+        result_data: list[dict] = []
+        all_event_tickets = response['response']['items']
+
+        for ticket in all_event_tickets:
+            if ticket['price']:
+                if (self.reformat_sectors(sector_name=ticket['name_sec'].lower()) and
+                    self.reformat_rows_or_seats(rows_seats='rows', rows_seats_name=ticket['row']) and
+                        self.reformat_rows_or_seats(rows_seats='seats', rows_seats_name=ticket['seat'])
+                ):
+                    result_data.append(
+                        {
+                            "event_id": ticket['event_id'],
+                            "set_id": ticket['set_id'],
+                            "cod_sec": ticket['cod_sec'],
+                            "row": ticket['row'],
+                            "seat": ticket['seat'],
+                            "price": ticket['price'],
+                            "price_sell": ticket['price_sell'],
+                        }
+                    )
+        return result_data
+
+
+if __name__ == '__main__':
+    # from pprint import pprint
+    # https://payecom.ru/pay?orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
+    #                        orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
+                                    #ddf6b230-a1ca-4beb-91d7-38deb2fad8e5
+    # https://payecom.ru/pay?orderId=bf154057-8f4c-5e77-1fb6-e14fcde4c5b8
+    # async def main():
+    #     per = BuyingTicketsNikulina(
+    #         event_filter=['https://widget.profticket.ru', '', '', ''],
+    #     )
+    #     await per.run_parser()
+    #
+    # asyncio.run(main())
+    # event_filter = ['Матрешка', '16 ноя 2024 14:00', 'Амфитеатр Правая сторона, артер', '3-4', 'все значения']
+    # def reformat_sectors():
+    #     if len(event_filter) <= 2 or event_filter[2] == 'все значения':
+    #         return 'все значения'
+    #     elif ',' in event_filter[2]:
+    #         rng = event_filter[2].split(',')
+    #         return [i.strip() for i in rng]
+    #     return event_filter[2]
+    #
+    # print(reformat_sectors())
+
+    ...
