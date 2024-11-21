@@ -16,7 +16,7 @@ async def read_data_from_json(file_name: str = 'users_filters.json') -> list[dic
             data = await file.read()
             return json.loads(data)
     except json.decoder.JSONDecodeError:
-        logger.warning(f'.json is empty!')
+        logger.warning(f'{file_name}.json is empty!')
         return None
 
 async def write_data_to_json(data: dict|list[dict], file_name: str = 'users_filters.json', change: bool=False) -> None:
@@ -27,18 +27,18 @@ async def write_data_to_json(data: dict|list[dict], file_name: str = 'users_filt
     :param change: Used if you need to overwrite json
     :return: None
     """
+    current_data: list[dict] = await read_data_from_json()
+
     async with aiofiles.open(file_name, 'w', encoding='utf-8') as file:
         if change and isinstance(data, list):
             await file.write(f"{json.dumps(data, indent=4, ensure_ascii=False)}")
             return
 
-        current_data = await read_data_from_json()
         if current_data:
             current_data.append(data)
             await file.write(f"{json.dumps(current_data, indent=4, ensure_ascii=False)}")
         else:
-            await file.write(f"[{json.dumps(data, indent=4, ensure_ascii=False)}]")
-
+            await file.write(f"[\n{json.dumps(data, indent=4, ensure_ascii=False)}\n]")
 
 
 def cancel_kb():
@@ -71,17 +71,5 @@ async def delete_link(user_id: int) -> None:
     for item in data:
         for _id, value in item.items():
             if int(_id) == user_id:
-                print('del')
                 value[-1] = 'disabled'
-    print(data)
     await write_data_to_json(data, change=True)
-
-
-
-# if __name__ == '__main__':
-#     data: list[dict] = [{'id1': ['b', 'disabled']}, {'id2': ['a', 'active']}]
-#     for item in data:
-#         for _id, value in item.items():
-#             if _id == 'id2':
-#                 value[-1] = 'disabled'
-#     print(data)

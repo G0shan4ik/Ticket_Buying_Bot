@@ -32,7 +32,7 @@ async def get_all_filters(message: Message):
                         reply_markup=delete_kb()
                     )
     if fl:
-        await message.answer('У вас нет установленных фильтров.')
+        await message.answer(hbold('❕У вас нет установленных фильтров.'))
 
 @router.callback_query(lambda query: query.data.startswith('delete'))
 async def next_photo_filter(query: CallbackQuery):
