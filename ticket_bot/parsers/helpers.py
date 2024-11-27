@@ -1,5 +1,4 @@
-from datetime import datetime
-
+from ticket_bot.bot_tg.helpers import read_data_from_json
 from faker import Faker
 
 
@@ -20,5 +19,17 @@ def get_fake_data(locale: str='ru_RU') -> list[str]:
         phone.strip(),
         fake.email(domain='gmail.com')
     ]
+
+
+async def check_valid_event(data: dict) -> bool:
+    """
+        A function that checks the event for activity
+    :param data: { 'user_id': [ filter_data ], 'active/disable' }
+    :return: Returns True if the event is not disabled
+    """
+    all_data = await read_data_from_json()
+    if data in all_data:
+        return True
+    return False
 
 
