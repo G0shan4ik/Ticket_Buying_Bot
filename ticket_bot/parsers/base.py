@@ -4,14 +4,16 @@ from playwright.async_api import async_playwright, Page, BrowserContext
 
 from pprint import pprint
 
+from .helpers import check_valid_event
 from .proxy_manager import ProxyManager
 from loguru import logger
 
 
 class BaseParser(ABC):
-    def __init__(self, start_url: str, event_filter: list[str]):
+    def __init__(self, start_url: str, event_filter: str, all_user_data: dict):
         self.start_url: str = start_url
-        self.event_filter: list[str] = event_filter
+        self.event_filter: str = event_filter
+        self.all_user_data: dict = all_user_data
         self.payment_link = None
         self.context = None
 
@@ -22,6 +24,7 @@ class BaseParser(ABC):
         self.event_id = None
         self.show_id = None
         self.company_id = None
+        self.spa_session = None
 
     # complete
     @abstractmethod
@@ -44,6 +47,18 @@ class BaseParser(ABC):
         :return: Dictionary with tickets data
         """
         ...
+
+    async def get_spa_session(self, p: Page) -> None:
+        """
+            The function that receives the site session token.
+        :param p: Page
+        :return: None
+        """
+        response = await (await p.request.post(
+            url=f"https://widget.profticket.ru/api/basket/start-session/?language=ru-RU&company_id={self.company_id}"
+        )).json()
+        self.spa_session = response['response']['session']
+
     # @abstractmethod
     # async def choose_and_pay_tickets(self, p: Page):
     #     """
@@ -77,42 +92,46 @@ class BaseParser(ABC):
             The parsing manager.
         :return: None
         """
-        async with async_playwright() as p:
-            proxy_manager = ProxyManager()
-            logger.success('Start session')
+        while True:
+            if await check_valid_event(self.all_user_data):
+                logger.warning(f'Event disable, stop parsing! {self.event_filter}')
+                return
+            async with async_playwright() as p:
+                proxy_manager = ProxyManager()
+                logger.success('Start session')
 
-            async for item in proxy_manager.get_proxy_for_request():
-                try:
-                    browser = await p.chromium.launch()
-                    context = await browser.new_context(
-                        proxy=item,
-                        viewport={
-                            'width': 1920,
-                            'height': 1080
-                        },
-                        user_agent=proxy_manager.user_agent
-                    )
-                    self.context = context
-                    page = await context.new_page()
-                    logger.success(f'Relevant proxy - {item["server"]}')
-                    logger.success('Create context')
+                async for item in proxy_manager.get_proxy_for_request():
+                    try:
+                        browser = await p.chromium.launch()
+                        context = await browser.new_context(
+                            proxy=item,
+                            viewport={
+                                'width': 1920,
+                                'height': 1080
+                            },
+                            user_agent=proxy_manager.user_agent
+                        )
+                        self.context = context
+                        page = await context.new_page()
+                        logger.success(f'Relevant proxy - {item["server"]}')
+                        logger.success('Create context')
 
-                    # await self.check_relevant_tickets(p=page)
+                        await self.check_relevant_tickets(p=page)
 
-                    self.event_id = '6861'
-                    self.show_id = '5233'
-                    self.company_id = '54'
+                        self.event_id = '6861'
+                        self.show_id = '5233'
+                        self.company_id = '54'
 
-                    purchase_tickets: list[dict] = await self.get_tickets(p=page, context=context)
-                    if purchase_tickets:
-                        ...
+                        purchase_tickets: list[dict] = await self.get_tickets(p=page, context=context)
+                        if purchase_tickets:
+                            ...
 
-                    break
-                except Exception as ex:
-                    if "net::ERR_TIMED_OUT" in ex.__str__():
-                        logger.warning(f'An irrelevant proxy - {item["server"]}')
-                        continue
-                    raise Exception(ex)
+                        break
+                    except Exception as ex:
+                        if "net::ERR_TIMED_OUT" in ex.__str__():
+                            logger.warning(f'An irrelevant proxy - {item["server"]}')
+                            continue
+                        raise Exception(ex)
 
 
 __all__ = [
