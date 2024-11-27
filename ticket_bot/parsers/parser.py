@@ -6,9 +6,10 @@ from playwright.async_api import Page, BrowserContext
 
 
 class BuyingTicketsNikulina(BaseParser):
-    def __init__(self, event_filter: list[str]):
+    def __init__(self, event_filter: str, all_user_data: dict):
         super().__init__(
             event_filter=event_filter,
+            all_user_data=all_user_data,
             start_url="https://spa.profticket.ru/customer/53/shows"
         )
 
@@ -77,12 +78,13 @@ class BuyingTicketsNikulina(BaseParser):
                     if event['free_places_count']:
                         date_formatted = ' '.join(event['date_formatted'].split(', ')[::2]).split()
                         date_formatted[1] = date_formatted[1][:3]
-                        # if (self.event_name.lower() == event['show_name'].lower() and
-                        #         self.event_date == ' '.join(date_formatted[:-1])):
-                        self.event_id = event['id']
-                        self.show_id = event['show']['id']
+                        if (self.event_name.lower() == event['show_name'].lower() and
+                                self.event_date == ' '.join(date_formatted[:-1])):
+                            self.event_id = event['id']
+                            self.show_id = event['show']['id']
 
-                        return
+                            await self.get_spa_session(p=p)
+                            return
                 await asyncio.sleep(0)
         logger.warning(f'No tickets were found for the <- {self.event_date, self.event_date} -> event!')
 
