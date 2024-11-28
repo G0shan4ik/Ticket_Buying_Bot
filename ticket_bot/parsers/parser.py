@@ -1,4 +1,5 @@
 import asyncio
+from pprint import pprint
 
 from loguru import logger
 from .base import BaseParser
@@ -76,10 +77,10 @@ class BuyingTicketsNikulina(BaseParser):
             for item in all_page_events:
                 for event in item['events']:
                     if event['free_places_count']:
-                        date_formatted = ' '.join(event['date_formatted'].split(', ')[::2]).split()
-                        date_formatted[1] = date_formatted[1][:3]
+                        date_formatted = ' '.join(event['show']['first_event_date_formatted'].replace(',', '')).replace(' ', '')
+
                         if (self.event_name.lower() == event['show_name'].lower() and
-                                self.event_date == ' '.join(date_formatted[:-1])):
+                                self.event_date.replace(' ', '') == date_formatted):
                             self.event_id = event['id']
                             self.show_id = event['show']['id']
 
@@ -88,9 +89,7 @@ class BuyingTicketsNikulina(BaseParser):
                 await asyncio.sleep(0)
         logger.warning(f'No tickets were found for the <- {self.event_date, self.event_date} -> event!')
 
-    async def get_tickets(self, p: Page, context: BrowserContext) -> list[dict]:
-        # await p.goto(url=self.start_url, wait_until='commit')
-
+    async def get_tickets(self, p: Page) -> list[dict]:
         scheme_url = (f'https://widget.profticket.ru/api/event/scheme/?company_id={self.company_id}&'
                       f'global_show_id={self.show_id}&event_id={self.event_id}&language=ru-RU')
         response = await (await p.request.get(
@@ -120,9 +119,25 @@ class BuyingTicketsNikulina(BaseParser):
                     )
         return result_data
 
+    async def create_basket_items(self, p: Page, data: list[dict]) -> None:
+        response = await (await p.request.post(
+            url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
+            data={
+                'session': self.spa_session,
+                'company_id': self.company_id,
+                'global_show_id': self.show_id,
+                'items': data
+            }
+        )).json()
+        pprint(response)
+
+    async def send_payment_link(self):
+        ...
+
 
 if __name__ == '__main__':
     # from pprint import pprint
+
     # https://payecom.ru/pay?orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
     #                        orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
                                     #ddf6b230-a1ca-4beb-91d7-38deb2fad8e5

@@ -38,13 +38,24 @@ class BaseParser(ABC):
         ...
 
     @abstractmethod
-    async def get_tickets(self, p: Page, context: BrowserContext) -> list[dict]:
+    async def get_tickets(self, p: Page) -> list[dict]:
         """
             Finds available tickets for a given event.
 
         :param p: Page
         :param context: BrowserContext
         :return: Dictionary with tickets data
+        """
+        ...
+
+    @abstractmethod
+    async def create_basket_items(self, p: Page, data: list[dict]):
+        """
+            A function that adds valid tickets to the payment cart
+
+        :param p: Page
+        :param data: List of dictionaries with ticket data
+        :return: None
         """
         ...
 
@@ -55,37 +66,19 @@ class BaseParser(ABC):
         :return: None
         """
         response = await (await p.request.post(
-            url=f"https://widget.profticket.ru/api/basket/start-session/?language=ru-RU&company_id={self.company_id}"
+            url=f"https://widget.profticket.ru/api/basket/start-session/?language=ru-RU",
+            data={'company_id': self.company_id}
         )).json()
         self.spa_session = response['response']['session']
 
-    # @abstractmethod
-    # async def choose_and_pay_tickets(self, p: Page):
-    #     """
-    #         Selects tickets by filter from the available tickets on the website and
-    #     adds them to the "payment".
-    #         Fills out the payment form and goes to the payment system and
-    #     pulls out a link to pay for tickets.
-    #
-    #     :param p: Page
-    #     :return: Payment link
-    #     """
-    #     ...
-    # https://widget.profticket.ru/api/event/scheme/?company_id=54&global_show_id=5233&event_id=6861&language=ru-RU
-    # ссылка где которая возвращает json с местами посадки, там можно найти доступные и из них вибирать
-    #
-    # https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU - post запрос со страницы с мероприятием на оформление заказа
-    # [{"event_id":"6862","set_id":null,"cod_sec":"186","row":"5","seat":"18","price":2500,"price_sell":2500},{"event_id":"6862","set_id":null,"cod_sec":"186","row":"4","seat":"1","price":2500,"price_sell":2500}]
-    #
-    # @abstractmethod
-    # async def send_payment_link(self, p: Page) -> None:
-    #     """
-    #         Sends a payment link in a telegram to a specific person.
-    #
-    #     :param p: Page
-    #     :return: None
-    #     """
-    #     ...
+    @abstractmethod
+    async def send_payment_link(self) -> None:
+        """
+            Sends a payment link in a telegram to a specific person.
+
+        :return: None
+        """
+        ...
 
     async def run_parser(self) -> None:
         """
@@ -111,20 +104,26 @@ class BaseParser(ABC):
                             },
                             user_agent=proxy_manager.user_agent
                         )
-                        self.context = context
                         page = await context.new_page()
                         logger.success(f'Relevant proxy - {item["server"]}')
                         logger.success('Create context')
 
+                        self.context = context
                         await self.check_relevant_tickets(p=page)
 
-                        self.event_id = '6861'
-                        self.show_id = '5233'
-                        self.company_id = '54'
+                        # self.event_id = '6861'
+                        # self.show_id = '5233'
+                        # self.company_id = '54'
+                        if not self.show_id and not self.company_id:
+                            break
+                        purchase_tickets: list[dict] = await self.get_tickets(p=page)
 
-                        purchase_tickets: list[dict] = await self.get_tickets(p=page, context=context)
+                        print(purchase_tickets)
+
                         if purchase_tickets:
-                            ...
+                            await self.create_basket_items(p=page, data=purchase_tickets)
+
+                            print(await self.context.cookies())
 
                         break
                     except Exception as ex:
@@ -132,6 +131,8 @@ class BaseParser(ABC):
                             logger.warning(f'An irrelevant proxy - {item["server"]}')
                             continue
                         raise Exception(ex)
+                break
+            break
 
 
 __all__ = [
