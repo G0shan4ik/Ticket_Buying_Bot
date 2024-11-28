@@ -7,7 +7,7 @@ from .core import router
 from .helpers import check_valid_filter_format, write_data_to_json
 
 
-# from ticket_bot.parsers.parser import BuyingTicketsNikulina
+from ticket_bot.parsers.parser import BuyingTicketsNikulina
 
 
 class AddParsFilter(StatesGroup):
@@ -39,10 +39,9 @@ async def add_link_(message: Message, state: FSMContext):
 
     await state.clear()
 
-    # тут будет отрабатывать run_parser()
-    # start = BuyingTicketsNikulina(
-    #   event_filter=data,
-    #   all_user_data={message.from_user.id: [data, 'active']}
-    # )
-    # await start.run_parser()
+    start = BuyingTicketsNikulina(
+      event_filter='; '.join(data),
+      all_user_data={message.from_user.id: [data, 'active']}
+    )
+    await start.run_parser()
 
