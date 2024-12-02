@@ -41,7 +41,7 @@ async def check_pars_event() -> None:
             for user, data in item.items():
                 if data[-1] == 'active':
                     start = BuyingTicketsNikulina(
-                        event_filter='; '.join(data[0]),
+                        event_filter=data[0],
                         all_user_data={
                             'user_id': int(user),
                             'data': {f"{user}": data}
