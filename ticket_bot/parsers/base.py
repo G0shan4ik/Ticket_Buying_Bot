@@ -1,6 +1,7 @@
+import asyncio
 from abc import ABC, abstractmethod
 
-from playwright.async_api import async_playwright, Page, BrowserContext
+from playwright.async_api import async_playwright, Page
 
 from pprint import pprint
 
@@ -8,22 +9,25 @@ from .helpers import check_valid_event
 from .proxy_manager import ProxyManager
 from loguru import logger
 
+from aiogram import Bot
+
 
 class BaseParser(ABC):
-    def __init__(self, start_url: str, event_filter: str, all_user_data: dict):
+    def __init__(self, start_url: str, event_filter: str, all_user_data: dict, bot: Bot, company_id: int):
         self.start_url: str = start_url
         self.event_filter: str = event_filter
         self.all_user_data: dict = all_user_data
+        self.bot = bot
         self.payment_link = None
         self.context = None
 
-        self.year_month: list[str] = ['2024.11', '2024.12', '2025.01']
+        self.year_month: list[str] = ['2024.12', '2025.01', '2025.02']
         self.event_name: str = event_filter[0]
         self.event_date: str = event_filter[1]
 
+        self.company_id = company_id
         self.event_id = None
         self.show_id = None
-        self.company_id = None
         self.spa_session = None
 
     # complete
@@ -71,14 +75,16 @@ class BaseParser(ABC):
         )).json()
         self.spa_session = response['response']['session']
 
-    @abstractmethod
     async def send_payment_link(self) -> None:
         """
             Sends a payment link in a telegram to a specific person.
 
         :return: None
         """
-        ...
+        await self.bot.send_message(
+            chat_id=self.all_user_data['user_id'],
+            text=self.payment_link
+        )
 
     async def run_parser(self) -> None:
         """
@@ -86,12 +92,13 @@ class BaseParser(ABC):
         :return: None
         """
         while True:
-            if await check_valid_event(self.all_user_data):
-                logger.warning(f'Event disable, stop parsing! {self.event_filter}')
-                return
             async with async_playwright() as p:
                 proxy_manager = ProxyManager()
                 logger.success('Start session')
+
+                if await check_valid_event(self.all_user_data):
+                    logger.warning(f'Event disable, stop parsing! {self.event_filter}')
+                    return
 
                 async for item in proxy_manager.get_proxy_for_request():
                     try:
@@ -105,25 +112,24 @@ class BaseParser(ABC):
                             user_agent=proxy_manager.user_agent
                         )
                         page = await context.new_page()
-                        logger.success(f'Relevant proxy - {item["server"]}')
                         logger.success('Create context')
 
                         self.context = context
                         await self.check_relevant_tickets(p=page)
+                        await asyncio.sleep(0)
+                        logger.success(f'Relevant proxy - {item["server"]}')
 
-                        # self.event_id = '6861'
-                        # self.show_id = '5233'
-                        # self.company_id = '54'
                         if not self.show_id and not self.company_id:
+                            await asyncio.sleep(10)
                             break
                         purchase_tickets: list[dict] = await self.get_tickets(p=page)
 
-                        print(purchase_tickets)
+                        # pprint(purchase_tickets)
+                        # print(len(purchase_tickets))
 
                         if purchase_tickets:
                             await self.create_basket_items(p=page, data=purchase_tickets)
-
-                            print(await self.context.cookies())
+                            await asyncio.sleep(0)
 
                         break
                     except Exception as ex:

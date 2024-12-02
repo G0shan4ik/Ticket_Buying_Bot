@@ -3,19 +3,20 @@ from pprint import pprint
 
 from loguru import logger
 from .base import BaseParser
-from playwright.async_api import Page, BrowserContext
+from playwright.async_api import Page
+from aiogram import Bot
 
 
 class BuyingTicketsNikulina(BaseParser):
-    def __init__(self, event_filter: str, all_user_data: dict):
+    def __init__(self, event_filter: str, all_user_data: dict, bot: Bot):
         super().__init__(
             event_filter=event_filter,
             all_user_data=all_user_data,
-            start_url="https://spa.profticket.ru/customer/53/shows"
+            start_url="https://spa.profticket.ru/customer/53/shows",
+            bot=bot,
+            company_id = 53
         )
-
         self.venue = 'Цирк Никулина'
-        self.company_id = 53
 
     def reformat_sectors(self, sector_name: str) -> bool:
         """
@@ -23,13 +24,13 @@ class BuyingTicketsNikulina(BaseParser):
         :param sector_name: Sector name (str)
         :return: bool
         """
-        if len(self.event_filter) <= 2 or self.event_filter[2] == 'все значения':
+        if len(self.event_filter) <= 2 or self.event_filter[2].lower() == 'все значения':
             return True
         elif ',' in self.event_filter[2]:
-            rng = self.event_filter[2].split(',')
+            rng = self.event_filter[2].lower().split(', ')
             if sector_name in [i.strip().lower() for i in rng]:
                 return True
-        elif sector_name == self.event_filter[2].lower():
+        elif sector_name.lower() == self.event_filter[2].lower():
             return True
         return False
 
@@ -42,13 +43,13 @@ class BuyingTicketsNikulina(BaseParser):
         :return: bool
         """
         num = 3 if rows_seats == 'rows' else 4
-        if len(self.event_filter) <= 3 or self.event_filter[num] == 'все значения':
+        if len(self.event_filter) <= 3 or self.event_filter[num].lower() == 'все значения':
             return True
         elif '-' in self.event_filter[num]:
             rng = self.event_filter[num].split('-')
             if int(rows_seats_name) in [i for i in range(int(rng[0]), 1 + int(rng[-1]))]:
                 return True
-        elif ',' in self.event_filter[num]:
+        elif ',' in self.event_filter[num] or len(self.event_filter[num]) >= 1:
             rng = self.event_filter[num].split(',')
             if int(rows_seats_name) in [int(i) for i in rng]:
                 return True
@@ -56,6 +57,8 @@ class BuyingTicketsNikulina(BaseParser):
 
 
     async def check_relevant_tickets(self, p: Page) -> None:
+        self.show_id, self.event_id = None, None
+
         await p.goto(url=self.start_url, wait_until='commit')
 
         logger.success(f'Start pars {self.start_url}, {self.venue}.')
@@ -87,7 +90,7 @@ class BuyingTicketsNikulina(BaseParser):
                             await self.get_spa_session(p=p)
                             return
                 await asyncio.sleep(0)
-        logger.warning(f'No tickets were found for the <- {self.event_date, self.event_date} -> event!')
+        logger.warning(f'No tickets were found for the <- {self.event_name, self.event_date} -> event!')
 
     async def get_tickets(self, p: Page) -> list[dict]:
         scheme_url = (f'https://widget.profticket.ru/api/event/scheme/?company_id={self.company_id}&'
@@ -130,9 +133,6 @@ class BuyingTicketsNikulina(BaseParser):
             }
         )).json()
         pprint(response)
-
-    async def send_payment_link(self):
-        ...
 
 
 if __name__ == '__main__':
