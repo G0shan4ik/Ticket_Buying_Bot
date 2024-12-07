@@ -1,9 +1,7 @@
 import asyncio
 from abc import ABC, abstractmethod
 
-from playwright.async_api import async_playwright, Page
-
-from pprint import pprint
+from playwright.async_api import async_playwright
 
 from .helpers import check_valid_event
 from .proxy_manager import ProxyManager
@@ -20,6 +18,7 @@ class BaseParser(ABC):
         self.bot = bot
         self.payment_link = None
         self.context = None
+        self.session = None
 
         self.year_month: list[str] = ['2024.12', '2025.01', '2025.02']
         self.event_name: str = event_filter[0]
@@ -32,44 +31,37 @@ class BaseParser(ABC):
 
     # complete
     @abstractmethod
-    async def check_relevant_tickets(self, p: Page) -> None:
+    async def check_relevant_tickets(self) -> None:
         """
             Finds links to events for which there are tickets.
 
-        :param p: Page
         :return: None
         """
         ...
 
     @abstractmethod
-    async def get_tickets(self, p: Page) -> list[dict]:
+    async def get_tickets(self) -> list[dict]:
         """
             Finds available tickets for a given event.
-
-        :param p: Page
-        :param context: BrowserContext
         :return: Dictionary with tickets data
         """
         ...
 
     @abstractmethod
-    async def create_basket_items(self, p: Page, data: list[dict]):
+    async def create_basket_items(self, data: list[dict]):
         """
             A function that adds valid tickets to the payment cart
-
-        :param p: Page
         :param data: List of dictionaries with ticket data
         :return: None
         """
         ...
 
-    async def get_spa_session(self, p: Page) -> None:
+    async def get_spa_session(self) -> None:
         """
             The function that receives the site session token.
-        :param p: Page
         :return: None
         """
-        response = await (await p.request.post(
+        response = await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/start-session/?language=ru-RU",
             data={'company_id': self.company_id}
         )).json()
@@ -78,7 +70,6 @@ class BaseParser(ABC):
     async def send_payment_link(self) -> None:
         """
             Sends a payment link in a telegram to a specific person.
-
         :return: None
         """
         await self.bot.send_message(
@@ -111,24 +102,24 @@ class BaseParser(ABC):
                             },
                             user_agent=proxy_manager.user_agent
                         )
-                        page = await context.new_page()
+                        self.session = await context.new_page()
                         logger.success('Create context')
 
                         self.context = context
-                        await self.check_relevant_tickets(p=page)
+                        await self.check_relevant_tickets()
                         await asyncio.sleep(0)
                         logger.success(f'Relevant proxy - {item["server"]}')
 
                         if not self.show_id and not self.company_id:
                             await asyncio.sleep(10)
                             break
-                        purchase_tickets: list[dict] = await self.get_tickets(p=page)
+                        purchase_tickets: list[dict] = await self.get_tickets()
 
                         # pprint(purchase_tickets)
                         # print(len(purchase_tickets))
 
                         if purchase_tickets:
-                            await self.create_basket_items(p=page, data=purchase_tickets)
+                            await self.create_basket_items(data=purchase_tickets)
                             await asyncio.sleep(0)
 
                         break

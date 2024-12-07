@@ -2,9 +2,9 @@ import asyncio
 from pprint import pprint
 
 from loguru import logger
-from .base import BaseParser
-from playwright.async_api import Page
 from aiogram import Bot
+
+from .base import BaseParser
 
 
 class BuyingTicketsNikulina(BaseParser):
@@ -56,16 +56,16 @@ class BuyingTicketsNikulina(BaseParser):
         return False
 
 
-    async def check_relevant_tickets(self, p: Page) -> None:
+    async def check_relevant_tickets(self) -> None:
         self.show_id, self.event_id = None, None
 
-        await p.goto(url=self.start_url, wait_until='commit')
+        await self.session.goto(url=self.start_url, wait_until='commit')
 
         logger.success(f'Start pars {self.start_url}, {self.venue}.')
 
         for i in self.year_month:
             try:
-                response = await (await p.request.get(
+                response = await (await self.session.request.get(
                     url=f"https://widget.profticket.ru/api/event/list/?company_id=53&type=events&page=1&period_id=4&date={i}&language=ru-RU"
                 )).json()
             except:
@@ -87,15 +87,15 @@ class BuyingTicketsNikulina(BaseParser):
                             self.event_id = event['id']
                             self.show_id = event['show']['id']
 
-                            await self.get_spa_session(p=p)
+                            await self.get_spa_session()
                             return
                 await asyncio.sleep(0)
         logger.warning(f'No tickets were found for the <- {self.event_name, self.event_date} -> event!')
 
-    async def get_tickets(self, p: Page) -> list[dict]:
+    async def get_tickets(self) -> list[dict]:
         scheme_url = (f'https://widget.profticket.ru/api/event/scheme/?company_id={self.company_id}&'
                       f'global_show_id={self.show_id}&event_id={self.event_id}&language=ru-RU')
-        response = await (await p.request.get(
+        response = await (await self.session.request.get(
             url=scheme_url
         )).json()
         await asyncio.sleep(0)
@@ -122,8 +122,15 @@ class BuyingTicketsNikulina(BaseParser):
                     )
         return result_data
 
-    async def create_basket_items(self, p: Page, data: list[dict]) -> None:
-        response = await (await p.request.post(
+    async def create_basket_items(self, data: list[dict]) -> None:
+        # print(await (await p.request.post(
+        #     'https://widget.profticket.ru/api/basket/data/?language=ru-RU',
+        #     data={
+        #         'session': self.spa_session,
+        #         'company_id': self.company_id
+        #     }
+        # )).json())
+        response = await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
             data={
                 'session': self.spa_session,
