@@ -42,15 +42,3 @@ class ProxyManager:
                 pr = pr.split("@")
                 _data['server'] = f'http://{pr[-1]}@{pr[0]}'
                 yield _data
-
-
-if __name__ == '__main__':
-
-    import asyncio
-    async def main():
-        per = ProxyManager()
-        async for item in per.get_proxy_for_request():
-            print(item)
-            await asyncio.sleep(1)
-
-    asyncio.run(main())

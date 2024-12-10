@@ -8,7 +8,6 @@ from .helpers import cancel_kb, read_data_from_json, delete_kb, delete_link
 from .core import bot_
 
 
-
 @router.message(Command(commands=['add_filter']))
 async def add_filter(message: Message, state: FSMContext):
     await message.answer(
@@ -16,7 +15,6 @@ async def add_filter(message: Message, state: FSMContext):
         reply_markup=cancel_kb()
     )
     await state.set_state(AddParsFilter.add_filter)
-
 
 @router.message(Command(commands=['all_filters']))
 async def get_all_filters(message: Message):
