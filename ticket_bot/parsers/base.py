@@ -1,6 +1,5 @@
 import asyncio
 from abc import ABC, abstractmethod
-from pprint import pprint
 
 from playwright.async_api import async_playwright
 
@@ -17,7 +16,7 @@ class BaseParser(ABC):
         self.event_filter: list = event_filter
         self.all_user_data: dict = all_user_data
         self.bot = bot
-        self.payment_link = None
+        self.payment_link = ''
         self.context = None
         self.session = None
 
@@ -57,6 +56,14 @@ class BaseParser(ABC):
         """
         ...
 
+    @abstractmethod
+    async def pars_payment_link(self) -> None:
+        """
+            A function that pars a link to the Sberbank payment system.
+        :return: None
+        """
+        ...
+
     async def get_spa_session(self) -> None:
         """
             The function that receives the site session token.
@@ -77,6 +84,7 @@ class BaseParser(ABC):
             chat_id=self.all_user_data['user_id'],
             text=self.payment_link
         )
+        self.payment_link = ''
 
     async def run_parser(self) -> None:
         """
@@ -118,12 +126,13 @@ class BaseParser(ABC):
                             break
                         purchase_tickets: list[dict] = await self.get_tickets()
 
-                        pprint(purchase_tickets)
-                        # print(len(purchase_tickets))
+                        # pprint(purchase_tickets)
 
                         if purchase_tickets:
                             await self.create_basket_items(data=purchase_tickets)
                             await asyncio.sleep(0)
+                            await self.pars_payment_link()
+                            await self.send_payment_link()
 
                         break
                     except Exception as ex:

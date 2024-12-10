@@ -1,10 +1,12 @@
 import asyncio
-from pprint import pprint
+import random
 
 from loguru import logger
 from aiogram import Bot
+from json import dumps
 
 from .base import BaseParser
+from .helpers import get_fake_data
 
 
 class BuyingTicketsNikulina(BaseParser):
@@ -54,7 +56,6 @@ class BuyingTicketsNikulina(BaseParser):
             if int(rows_seats_name) in [int(i) for i in rng]:
                 return True
         return False
-
 
     async def check_relevant_tickets(self) -> None:
         self.show_id, self.event_id = None, None
@@ -120,19 +121,11 @@ class BuyingTicketsNikulina(BaseParser):
                             "price_sell": ticket['price_sell'],
                         }
                     )
+        logger.info(f'Pars valid tickets for event: {self.event_name}')
         return result_data
 
     async def create_basket_items(self, data: list[dict]) -> None:
-        from json import dumps
-        print(self.event_id)
-        await self.session.goto(url=f'https://spa.profticket.ru/customer/53/shows/94?eventsIds%5B%5D={self.event_id}', wait_until='commit')
-        pprint({
-                'session': self.spa_session,
-                'company_id': self.company_id,
-                'global_show_id': self.show_id,
-                'items': dumps(data)
-            })
-        response = await (await self.session.request.post(
+        await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
             data={
                 'session': self.spa_session,
@@ -141,32 +134,28 @@ class BuyingTicketsNikulina(BaseParser):
                 'items': dumps(data)
             }
         )).json()
-        pprint(response)
+        logger.info(f"Create basket items for event: {self.event_name}")
 
+    async def pars_payment_link(self):
+        fake_data = get_fake_data()
+        analytics_id = f'{random.randint(472425213, 2071200932)}.17{32645897}'
 
-if __name__ == '__main__':
-    # from pprint import pprint
+        response = await (await self.session.request.post(
+            'https://widget.profticket.ru/api/order/create/?language=ru-RU',
+            data={
+                'session': self.spa_session,
+                'company_id': self.company_id,
+                'user_name': fake_data[0],
+                'user_phone': fake_data[1],
+                'user_email': fake_data[-1],
+                'gift_recipient_name': '',
+                'accepted': 1,
+                'custom_checkbox': '',
+                'analytics_client_id': analytics_id,
+                'payment_system_id': 335,
+                'visitors_data': []
+            }
+        )).json()
+        self.payment_link = response['response']['payment_url']
 
-    # https://payecom.ru/pay?orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
-    #                        orderId=951ca526-fc94-5fd7-1a63-ea6037b2df93
-                                    #ddf6b230-a1ca-4beb-91d7-38deb2fad8e5
-    # https://payecom.ru/pay?orderId=bf154057-8f4c-5e77-1fb6-e14fcde4c5b8
-    # async def main():
-    #     per = BuyingTicketsNikulina(
-    #         event_filter=['https://widget.profticket.ru', '', '', ''],
-    #     )
-    #     await per.run_parser()
-    #
-    # asyncio.run(main())
-    # event_filter = ['Матрешка', '16 ноя 2024 14:00', 'Амфитеатр Правая сторона, артер', '3-4', 'все значения']
-    # def reformat_sectors():
-    #     if len(event_filter) <= 2 or event_filter[2] == 'все значения':
-    #         return 'все значения'
-    #     elif ',' in event_filter[2]:
-    #         rng = event_filter[2].split(',')
-    #         return [i.strip() for i in rng]
-    #     return event_filter[2]
-    #
-    # print(reformat_sectors())
-
-    ...
+        logger.success(f"Success pars payment link({self.payment_link}) for event: {self.event_name}")
