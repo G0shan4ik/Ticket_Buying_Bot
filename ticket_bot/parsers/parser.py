@@ -123,13 +123,14 @@ class BuyingTicketsNikulina(BaseParser):
         return result_data
 
     async def create_basket_items(self, data: list[dict]) -> None:
+        from json import dumps
         print(self.event_id)
         await self.session.goto(url=f'https://spa.profticket.ru/customer/53/shows/94?eventsIds%5B%5D={self.event_id}', wait_until='commit')
         pprint({
                 'session': self.spa_session,
                 'company_id': self.company_id,
                 'global_show_id': self.show_id,
-                'items': data
+                'items': dumps(data)
             })
         response = await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
@@ -137,7 +138,7 @@ class BuyingTicketsNikulina(BaseParser):
                 'session': self.spa_session,
                 'company_id': self.company_id,
                 'global_show_id': self.show_id,
-                'items': data
+                'items': dumps(data)
             }
         )).json()
         pprint(response)
