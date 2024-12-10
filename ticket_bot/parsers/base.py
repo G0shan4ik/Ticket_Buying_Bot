@@ -1,5 +1,6 @@
 import asyncio
 from abc import ABC, abstractmethod
+from pprint import pprint
 
 from playwright.async_api import async_playwright
 
@@ -11,9 +12,9 @@ from aiogram import Bot
 
 
 class BaseParser(ABC):
-    def __init__(self, start_url: str, event_filter: str, all_user_data: dict, bot: Bot, company_id: int):
+    def __init__(self, start_url: str, event_filter: list, all_user_data: dict, bot: Bot, company_id: int):
         self.start_url: str = start_url
-        self.event_filter: str = event_filter
+        self.event_filter: list = event_filter
         self.all_user_data: dict = all_user_data
         self.bot = bot
         self.payment_link = None
@@ -100,7 +101,9 @@ class BaseParser(ABC):
                                 'width': 1920,
                                 'height': 1080
                             },
-                            user_agent=proxy_manager.user_agent
+                            user_agent=proxy_manager.user_agent,
+                            base_url='https://spa.profticket.ru',
+
                         )
                         self.session = await context.new_page()
                         logger.success('Create context')
@@ -115,7 +118,7 @@ class BaseParser(ABC):
                             break
                         purchase_tickets: list[dict] = await self.get_tickets()
 
-                        # pprint(purchase_tickets)
+                        pprint(purchase_tickets)
                         # print(len(purchase_tickets))
 
                         if purchase_tickets:

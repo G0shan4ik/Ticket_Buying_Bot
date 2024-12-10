@@ -43,9 +43,13 @@ async def add_link_(message: Message, state: FSMContext):
     )
 
     await state.clear()
-
+    from pprint import pprint
+    pprint({
+            'user_id': message.from_user.id,
+            'data': {f"{message.from_user.id}": [data, 'active']}
+        })
     start = BuyingTicketsNikulina(
-        event_filter='; '.join(data),
+        event_filter=data,
         all_user_data={
             'user_id': message.from_user.id,
             'data': {f"{message.from_user.id}": [data, 'active']}

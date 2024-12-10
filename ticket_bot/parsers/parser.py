@@ -8,7 +8,7 @@ from .base import BaseParser
 
 
 class BuyingTicketsNikulina(BaseParser):
-    def __init__(self, event_filter: str, all_user_data: dict, bot: Bot):
+    def __init__(self, event_filter: list, all_user_data: dict, bot: Bot):
         super().__init__(
             event_filter=event_filter,
             all_user_data=all_user_data,
@@ -123,13 +123,14 @@ class BuyingTicketsNikulina(BaseParser):
         return result_data
 
     async def create_basket_items(self, data: list[dict]) -> None:
-        # print(await (await p.request.post(
-        #     'https://widget.profticket.ru/api/basket/data/?language=ru-RU',
-        #     data={
-        #         'session': self.spa_session,
-        #         'company_id': self.company_id
-        #     }
-        # )).json())
+        print(self.event_id)
+        await self.session.goto(url=f'https://spa.profticket.ru/customer/53/shows/94?eventsIds%5B%5D={self.event_id}', wait_until='commit')
+        pprint({
+                'session': self.spa_session,
+                'company_id': self.company_id,
+                'global_show_id': self.show_id,
+                'items': data
+            })
         response = await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
             data={
