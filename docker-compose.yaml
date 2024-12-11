@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ticket_bot:
+    build: .
+    stop_signal: SIGINT
+    container_name: ticket_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
