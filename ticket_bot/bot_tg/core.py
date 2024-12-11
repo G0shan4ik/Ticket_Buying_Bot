@@ -16,6 +16,7 @@ import asyncio
 
 load_dotenv()
 
+admin_id =getenv('ADMIN')
 
 bot_ = Bot(
     token=getenv('BOT_TOKEN_API'),
@@ -52,7 +53,24 @@ async def check_pars_event() -> None:
     return
 
 
+async def on_startup(dispatcher):
+    if admin_id:
+        await bot_.send_message(
+            chat_id=admin_id,
+            text='Бот запущен!'
+        )
+
+async def on_shutdown(dispatcher):
+    if admin_id:
+        await bot_.send_message(
+            chat_id=admin_id,
+            text='Бот остановлен 😥'
+        )
+
 async def start_bot() -> None:
     await bot_(DeleteWebhook(drop_pending_updates=True))
+
+    dp.startup.register(on_startup)
+    dp.shutdown.register(on_shutdown)
 
     await asyncio.gather(dp.start_polling(bot_), check_pars_event())
