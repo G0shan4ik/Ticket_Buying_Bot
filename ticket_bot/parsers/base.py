@@ -11,6 +11,14 @@ from aiogram import Bot
 
 from random import randint
 
+from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+group_id = getenv('GROUP_ID')
+
 
 class BaseParser(ABC):
     def __init__(self, start_url: str, event_filter: list, all_user_data: dict, bot: Bot, company_id: int):
@@ -86,6 +94,7 @@ class BaseParser(ABC):
         """
         await self.bot.send_message(
             chat_id=self.all_user_data['user_id'],
+            # chat_id=group_id,
             text=self.payment_link
         )
         self.payment_link = ''
