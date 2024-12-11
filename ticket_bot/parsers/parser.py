@@ -1,5 +1,6 @@
 import asyncio
 import random
+from random import randint
 
 from loguru import logger
 from aiogram import Bot
@@ -124,8 +125,8 @@ class BuyingTicketsNikulina(BaseParser):
         logger.info(f'Pars valid tickets for event: {self.event_name}')
         return result_data
 
-    async def create_basket_items(self, data: list[dict]) -> None:
-        await (await self.session.request.post(
+    async def create_basket_items(self, data: list[dict]) -> bool:
+        response = await (await self.session.request.post(
             url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
             data={
                 'session': self.spa_session,
@@ -134,11 +135,14 @@ class BuyingTicketsNikulina(BaseParser):
                 'items': dumps(data)
             }
         )).json()
-        logger.info(f"Create basket items for event: {self.event_name}")
+        if 'error' in str(response):
+            return False
+        logger.info(f"Create basket items for event (add {len(data)} tickets): {self.event_name}")
+        return True
 
     async def pars_payment_link(self):
         fake_data = get_fake_data()
-        analytics_id = f'{random.randint(472425213, 2071200932)}.17{32645897}'
+        analytics_id = f'{random.randint(472425213, 2071200932)}.17{randint(12645897, 98765433)}'
 
         response = await (await self.session.request.post(
             'https://widget.profticket.ru/api/order/create/?language=ru-RU',
@@ -157,5 +161,4 @@ class BuyingTicketsNikulina(BaseParser):
             }
         )).json()
         self.payment_link = response['response']['payment_url']
-
         logger.success(f"Success pars payment link({self.payment_link}) for event: {self.event_name}")

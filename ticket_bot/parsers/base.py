@@ -3,11 +3,13 @@ from abc import ABC, abstractmethod
 
 from playwright.async_api import async_playwright
 
-from .helpers import check_valid_event
+from .helpers import check_valid_event, chunks
 from .proxy_manager import ProxyManager
 from loguru import logger
 
 from aiogram import Bot
+
+from random import randint
 
 
 class BaseParser(ABC):
@@ -29,6 +31,8 @@ class BaseParser(ABC):
         self.show_id = None
         self.spa_session = None
 
+        self.delay = 900
+
     # complete
     @abstractmethod
     async def check_relevant_tickets(self) -> None:
@@ -48,7 +52,7 @@ class BaseParser(ABC):
         ...
 
     @abstractmethod
-    async def create_basket_items(self, data: list[dict]):
+    async def create_basket_items(self, data: list[dict]) -> bool:
         """
             A function that adds valid tickets to the payment cart
         :param data: List of dictionaries with ticket data
@@ -92,57 +96,66 @@ class BaseParser(ABC):
         :return: None
         """
         while True:
-            async with async_playwright() as p:
-                proxy_manager = ProxyManager()
-                logger.success('Start session')
+            try:
+                async with async_playwright() as p:
+                    proxy_manager = ProxyManager()
+                    logger.success('Start session')
 
-                if await check_valid_event(self.all_user_data):
-                    logger.warning(f'Event disable, stop parsing! {self.event_filter}')
-                    return
+                    if await check_valid_event(self.all_user_data):
+                        logger.warning(f'Event disable, stop parsing! {self.event_filter}')
+                        return
 
-                async for item in proxy_manager.get_proxy_for_request():
-                    try:
-                        browser = await p.chromium.launch()
-                        context = await browser.new_context(
-                            proxy=item,
-                            viewport={
-                                'width': 1920,
-                                'height': 1080
-                            },
-                            user_agent=proxy_manager.user_agent,
-                            base_url='https://spa.profticket.ru',
+                    async for item in proxy_manager.get_proxy_for_request():
+                        try:
+                            browser = await p.chromium.launch()
+                            context = await browser.new_context(
+                                proxy=item,
+                                viewport={
+                                    'width': 1920,
+                                    'height': 1080
+                                },
+                                user_agent=proxy_manager.user_agent,
+                                base_url='https://spa.profticket.ru',
 
-                        )
-                        self.session = await context.new_page()
-                        logger.success('Create context')
+                            )
+                            self.session = await context.new_page()
+                            logger.success('Create context')
 
-                        self.context = context
-                        await self.check_relevant_tickets()
-                        await asyncio.sleep(0)
-                        logger.success(f'Relevant proxy - {item["server"]}')
-
-                        if not self.show_id and not self.company_id:
-                            await asyncio.sleep(10)
-                            break
-                        purchase_tickets: list[dict] = await self.get_tickets()
-
-                        # pprint(purchase_tickets)
-
-                        if purchase_tickets:
-                            await self.create_basket_items(data=purchase_tickets)
+                            self.context = context
+                            await self.check_relevant_tickets()
                             await asyncio.sleep(0)
-                            await self.pars_payment_link()
-                            await self.send_payment_link()
+                            logger.success(f'Relevant proxy - {item["server"]}')
 
-                        break
-                    except Exception as ex:
-                        if "net::ERR_TIMED_OUT" in ex.__str__():
-                            logger.warning(f'An irrelevant proxy - {item["server"]}')
-                            continue
-                        raise Exception(ex)
-                break
-            break
+                            if not self.show_id and not self.company_id:
+                                logger.error(f'!SIMPLE! block proxi {item["server"]}')
+                                continue
+                            purchase_tickets: list[dict] = await self.get_tickets()
 
+                            # print(purchase_tickets)
+
+                            if purchase_tickets:
+                                for stack in [i for i in chunks(purchase_tickets, 3)]:
+                                    try:
+                                        if await self.create_basket_items(data=stack):
+                                            logger.info('Sleep between buy tickets')
+                                            await asyncio.sleep(randint(45, 69))
+                                            await self.pars_payment_link()
+                                            await self.send_payment_link()
+                                        else: raise Exception('Artificial exclusion (block proxi)')
+                                    except Exception as ex:
+                                        logger.error(f'Block proxi {item["server"]} !WHEN BUYING TICKETS!')
+                                        continue
+                            logger.warning(f'All tickets bought for event {self.event_name}, {self.event_date}')
+                            logger.info(f'Wait {self.delay} seconds ({self.delay / 60}minutes)')
+                            await asyncio.sleep(self.delay)
+                        except Exception as ex:
+                            if "net::ERR_TIMED_OUT" in ex.__str__():
+                                logger.warning(f'An irrelevant proxy - {item["server"]}')
+                                continue
+                            raise Exception(ex)
+            except Exception as ex:
+                logger.error(f"{ex}")
+                continue
 
 __all__ = [
     'BaseParser'
