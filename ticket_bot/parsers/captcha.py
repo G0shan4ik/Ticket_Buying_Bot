@@ -1,9 +1,3 @@
-import asyncio
-import re
-
-from bs4 import BeautifulSoup
-import lxml
-
 from playwright.async_api import Page
 from twocaptcha import TwoCaptcha
 from loguru import logger
@@ -53,11 +47,3 @@ class CaptchaMixin:
 
         logger.success(f'STATUS SOLVED CAPTCHA')
         return True
-
-
-# https://widget.profticket.ru/api/anti-fraud/verify-captcha/?language=ru-RU
-
-
-# zIriijn3uj5Vpknvt_LnfNbF
-# 6LdxhW8cAAAAAIxrOyXUwe3TmyTTGhnx-E0ULyXL&co=aHR0cHM6Ly9zcGEucHJvZnRpY2tldC5ydTo0NDM.&hl=ru&v=zIriijn3uj5Vpknvt_LnfNbF&size=normal&cb=ddcom0ngs089
-# 6LfD3PIbAAAAAJs_eEHvoOl75_83eXSqpPSRFJ_u
