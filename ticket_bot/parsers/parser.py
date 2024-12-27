@@ -8,17 +8,20 @@ from json import dumps
 
 from .base import BaseParser
 from .helpers import get_fake_data
+from .captcha import CaptchaMixin
 
 
-class BuyingTicketsNikulina(BaseParser):
+class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
     def __init__(self, event_filter: list, all_user_data: dict, bot: Bot):
         super().__init__(
             event_filter=event_filter,
             all_user_data=all_user_data,
             start_url="https://spa.profticket.ru/customer/53/shows",
             bot=bot,
-            company_id = 53
+            company_id = 53,
+            venue='Цирк Никулина'
         )
+        CaptchaMixin.__init__(self)
         self.venue = 'Цирк Никулина'
 
     def reformat_sectors(self, sector_name: str) -> bool:
@@ -59,7 +62,7 @@ class BuyingTicketsNikulina(BaseParser):
         return False
 
     async def check_relevant_tickets(self) -> None:
-        self.show_id, self.event_id = None, None
+        self.show_id, self.event_id, self.global_show_id = None, None, None
 
         await self.session.goto(url=self.start_url, wait_until='commit')
 
@@ -88,6 +91,7 @@ class BuyingTicketsNikulina(BaseParser):
                                 self.event_date.replace(' ', '') == date_formatted):
                             self.event_id = event['id']
                             self.show_id = event['show']['id']
+                            self.global_show_id = event['show_id']
 
                             await self.get_spa_session()
                             return
@@ -135,13 +139,30 @@ class BuyingTicketsNikulina(BaseParser):
                 'items': dumps(data)
             }
         )).json()
-        if 'error' in str(response):
-            return False
+
+        if 'error' in str(response) and "'code': 15" in str(response):
+            await self.solve_captcha(
+                session=self.session,
+                company_id=self.company_id,
+                show_id=self.global_show_id,
+                event_id=self.event_id,
+                key=response['error']['message']['siteKey']
+            )
+            await (await self.session.request.post(
+                url=f"https://widget.profticket.ru/api/basket/pre-reservation/?language=ru-RU",
+                data={
+                    'session': self.spa_session,
+                    'company_id': self.company_id,
+                    'global_show_id': self.show_id,
+                    'items': dumps(data)
+                }
+            )).json()
+
         logger.info(f"Create basket items for event (add {len(data)} tickets): {self.event_name}")
         return True
 
     async def pars_payment_link(self):
-        fake_data = get_fake_data()
+        fake_data = await get_fake_data(mail=self.mail)
         analytics_id = f'{random.randint(472425213, 2071200932)}.17{randint(12645897, 98765433)}'
 
         response = await (await self.session.request.post(
