@@ -1,3 +1,5 @@
+from collections.abc import Awaitable
+
 from aiogram import Bot, Dispatcher, Router
 from aiogram.client.bot import DefaultBotProperties
 from aiogram.enums import ParseMode
@@ -28,6 +30,11 @@ dp = Dispatcher(storage=storage)
 router = Router()
 dp.include_router(router)
 
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
 
 async def check_pars_event() -> None:
     """
@@ -36,6 +43,7 @@ async def check_pars_event() -> None:
 
     :return: None
     """
+    processes: [Awaitable] = []
     all_data = await read_data_from_json()
     if all_data:
         for item in all_data:
@@ -49,7 +57,11 @@ async def check_pars_event() -> None:
                         },
                         bot=bot_
                     )
-                    await start.run_parser()
+                    processes.append(start.run_parser())
+
+    for stack in chunks(processes, 10):
+        await asyncio.gather(*stack)
+
     return
 
 
