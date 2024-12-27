@@ -15,6 +15,7 @@ faker = "^33.0.0"
 requests = "^2.32.3"
 bs4 = "^0.0.2"
 lxml = "^5.3.0"
+twocaptcha = "^0.0.1"
 
 
 [tool.poetry.scripts]
