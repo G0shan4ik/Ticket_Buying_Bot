@@ -1,10 +1,20 @@
+from random import choice
+
 from ticket_bot.bot_tg.helpers import read_data_from_json
 from faker import Faker
+import aiofiles
 
 
-def get_fake_data(locale: str='ru_RU') -> list[str]:
+async def get_random_email():
+    async with aiofiles.open("all_emails.txt", 'r', encoding='utf-8') as file:
+        data = (await file.read()).split('\n')
+        return choice(data).split(':')[0]
+
+
+async def get_fake_data(mail: str, locale: str='ru_RU') -> list[str]:
     """
         Create fake login details for the ticket payment form
+    :param mail: users email
     :param locale: optional parameter
     :return: returns a list containing 3 lines [fake_name, fake_phone_number, fake_email]
     """
@@ -17,7 +27,7 @@ def get_fake_data(locale: str='ru_RU') -> list[str]:
     return [
         fake.name(),
         phone.strip(),
-        fake.email(domain='gmail.com')
+        mail
     ]
 
 
