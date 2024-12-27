@@ -1,3 +1,5 @@
+import time
+
 from playwright.async_api import Page
 from twocaptcha import TwoCaptcha
 from loguru import logger
@@ -22,8 +24,10 @@ class CaptchaMixin:
         """
         Solves a captcha
         """
+        _start_time = time.time()
+
+        logger.info('Start solved CAPTCHA')
         try:
-            show_id = 94
             solved_key = self._solver.solve_captcha(
                 site_key=key,
                 page_url=f'https://spa.profticket.ru/customer/{company_id}/shows/{show_id}?eventsIds%5B%5D={event_id}',
@@ -39,7 +43,7 @@ class CaptchaMixin:
                 }
             )).json()
 
-            logger.success(f'Success solved captcha')
+            logger.success(f'Success solved captcha (time: {round(time.time() - _start_time, 2)} sec)')
 
         except Exception as ex:
             logger.error(f'The captcha has not been solved\n{ex}\n\n')
