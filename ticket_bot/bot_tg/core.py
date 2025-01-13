@@ -1,4 +1,5 @@
 from collections.abc import Awaitable
+from pprint import pprint
 
 from aiogram import Bot, Dispatcher, Router
 from aiogram.client.bot import DefaultBotProperties
@@ -46,6 +47,7 @@ async def check_pars_event() -> None:
     processes: [Awaitable] = []
     all_data = await read_data_from_json()
     if all_data:
+        pprint(all_data)
         for item in all_data:
             for user, data in item.items():
                 if data[-1] == 'active':
@@ -53,13 +55,13 @@ async def check_pars_event() -> None:
                         event_filter=data[0],
                         all_user_data={
                             'user_id': int(user),
-                            'data': {f"{user}": data}
+                            'data': {f"{user}": [data, 'active']}
                         },
                         bot=bot_
                     )
                     processes.append(start.run_parser())
 
-    for stack in chunks(processes, 10):
+    for stack in chunks(processes, 15):
         await asyncio.gather(*stack)
 
     return

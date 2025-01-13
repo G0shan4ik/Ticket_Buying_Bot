@@ -27,6 +27,7 @@ class CaptchaMixin:
         _start_time = time.time()
 
         logger.info('Start solved CAPTCHA')
+        print(key)
         try:
             solved_key = self._solver.solve_captcha(
                 site_key=key,
@@ -51,3 +52,12 @@ class CaptchaMixin:
 
         logger.success(f'STATUS SOLVED CAPTCHA')
         return True
+
+if __name__ == '__main__':
+    t = '6Ldbjc8UAAAAAD5LDOkI2CkYjdwCnJc0B2O4OGue'
+    _solver = TwoCaptcha('2747d33b443965ae1ae625ab4192bf1b')
+    solved_key = _solver.solve_captcha(
+        site_key=t,
+        page_url=f'https://click.ru/',
+    )
+    print(solved_key)

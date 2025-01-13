@@ -4,7 +4,7 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message
 
 from .core import router, bot_
-from .helpers import check_valid_filter_format, write_data_to_json, read_data_from_json, cancel_kb
+from .helpers import check_valid_filter_format, write_data_to_json, read_data_from_json, cancel_kb, formated_data
 
 from ticket_bot.parsers.parser import BuyingTicketsNikulina
 
@@ -36,20 +36,19 @@ async def add_link_(message: Message, state: FSMContext):
             return
 
     await write_data_to_json(
-        {message.from_user.id: [data, 'active']}
+        {message.from_user.id: [formated_data(data), 'active']}
     )
     await message.answer(
         text='✅Фильтр успешно установлен!',
     )
 
     await state.clear()
-
-    start = BuyingTicketsNikulina(
-        event_filter=data,
-        all_user_data={
-            'user_id': message.from_user.id,
-            'data': {f"{message.from_user.id}": [data, 'active']}
-        },
-        bot=bot_
-    )
-    await start.run_parser()
+    # start = BuyingTicketsNikulina(
+    #     event_filter=formated_data(data),
+    #     all_user_data={
+    #         'user_id': message.from_user.id,
+    #         'data': {f"{message.from_user.id}": [data, 'active']}
+    #     },
+    #     bot=bot_
+    # )
+    # await start.run_parser()

@@ -20,9 +20,9 @@ group_id = getenv('GROUP_ID')
 
 
 class BaseParser(ABC):
-    def __init__(self, start_url: str, event_filter: list, all_user_data: dict, bot: Bot, company_id: int, venue: str):
+    def __init__(self, start_url: str, event_filter: dict, all_user_data: dict, bot: Bot, company_id: int, venue: str):
         self.start_url: str = start_url
-        self.event_filter: list = event_filter
+        self.event_filter: dict = event_filter
         self.all_user_data: dict = all_user_data
         self.bot = bot
         self.payment_link = ''
@@ -30,8 +30,8 @@ class BaseParser(ABC):
         self.session = None
 
         self.year_month: list[str] = ['2024.12', '2025.01', '2025.02', '2025.03', '2025.04']
-        self.event_name: str = event_filter[0]
-        self.event_date: str = event_filter[1]
+        self.event_name: str = event_filter['event_name']
+        self.event_date: str = event_filter['event_start']
 
         self.company_id = company_id
         self.event_id = None
@@ -55,7 +55,7 @@ class BaseParser(ABC):
         _formatted_date[1] = _formatted_date[1][:3].capitalize()
         return \
             f'''{self.event_name.capitalize()}, {' '.join(_formatted_date)}\n''' \
-            f'''{hbold("Сектор:")} {self.event_filter[2].capitalize()}\n&&&''' \
+            f'''{hbold("Сектор:")} {self.event_filter['sector_name'].capitalize()}\n&&&''' \
             f'''{self.payment_link}\n''' \
             f'''{hbold("Схема:")} https://spa.profticket.ru/customer/{self.company_id}/shows/{self.global_show_id}/#{self.event_id}\n''' \
             f'''{hbold("Account:")} {self.mail}'''
@@ -194,7 +194,7 @@ class BaseParser(ABC):
                                     try:
                                         if await self.create_basket_items(data=stack):
                                             await self.pars_payment_link()
-                                            await self.send_payment_link(data=stack)
+                                            # await self.send_payment_link(data=stack)
                                         else:
                                             raise Exception('Artificial exclusion (block "user")')
                                     except Exception as ex:

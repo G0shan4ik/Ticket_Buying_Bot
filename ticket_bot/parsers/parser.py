@@ -12,7 +12,7 @@ from .captcha import CaptchaMixin
 
 
 class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
-    def __init__(self, event_filter: list, all_user_data: dict, bot: Bot):
+    def __init__(self, event_filter: dict, all_user_data: dict, bot: Bot):
         super().__init__(
             event_filter=event_filter,
             all_user_data=all_user_data,
@@ -24,19 +24,34 @@ class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
         CaptchaMixin.__init__(self)
         self.venue = 'Цирк Никулина'
 
+    def reformat_price(self, price: int) -> bool:
+        if self.event_filter['price'].lower() == '':
+            return True
+        elif '-' in self.event_filter['price']:
+            rng = self.event_filter['price'].split('-')
+            if price in [i for i in range(int(rng[0]), 1 + int(rng[-1]))]:
+                return True
+        elif ',' in self.event_filter['price']:
+            rng = self.event_filter['price'].lower().split(', ')
+            if price in [int(i) for i in rng]:
+                return True
+        elif price == int(self.event_filter['price']):
+            return True
+        return False
+
     def reformat_sectors(self, sector_name: str) -> bool:
         """
             Returns True if the sector_name matches the filter
         :param sector_name: Sector name (str)
         :return: bool
         """
-        if len(self.event_filter) <= 2 or self.event_filter[2].lower() == 'все значения':
+        if self.event_filter['sector_name'].lower() == '':
             return True
-        elif ',' in self.event_filter[2]:
-            rng = self.event_filter[2].lower().split(', ')
+        elif ',' in self.event_filter['sector_name']:
+            rng = self.event_filter['sector_name'].lower().split(', ')
             if sector_name in [i.strip().lower() for i in rng]:
                 return True
-        elif sector_name.lower() == self.event_filter[2].lower():
+        elif sector_name.lower() == self.event_filter['sector_name'].lower():
             return True
         return False
 
@@ -48,15 +63,15 @@ class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
         :param rows_seats_name: number rows or seats
         :return: bool
         """
-        num = 3 if rows_seats == 'rows' else 4
-        if len(self.event_filter) <= 3 or self.event_filter[num].lower() == 'все значения':
+        ro_se = 'rows' if rows_seats == 'rows' else 'seats'
+        if self.event_filter[ro_se].lower() == '':
             return True
-        elif '-' in self.event_filter[num]:
-            rng = self.event_filter[num].split('-')
+        elif '-' in self.event_filter[ro_se]:
+            rng = self.event_filter[ro_se].split('-')
             if int(rows_seats_name) in [i for i in range(int(rng[0]), 1 + int(rng[-1]))]:
                 return True
-        elif ',' in self.event_filter[num] or len(self.event_filter[num]) >= 1:
-            rng = self.event_filter[num].split(',')
+        elif ',' in self.event_filter[ro_se] or len(self.event_filter[ro_se]) >= 1:
+            rng = self.event_filter[ro_se].split(',')
             if int(rows_seats_name) in [int(i) for i in rng]:
                 return True
         return False
@@ -87,8 +102,8 @@ class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
                     if event['free_places_count']:
                         date_formatted = ' '.join(event['show']['first_event_date_formatted'].replace(',', '')).replace(' ', '')
 
-                        if (self.event_name.lower() == event['show_name'].lower() and
-                                self.event_date.replace(' ', '') == date_formatted):
+                        if self.event_name == '' or (self.event_name.lower() == event['show_name'].lower() and
+                                                     self.event_date.replace(' ', '') == date_formatted):
                             self.event_id = event['id']
                             self.show_id = event['show']['id']
                             self.global_show_id = event['show_id']
@@ -113,7 +128,8 @@ class BuyingTicketsNikulina(BaseParser, CaptchaMixin):
             if ticket['price']:
                 if (self.reformat_sectors(sector_name=ticket['name_sec'].lower()) and
                     self.reformat_rows_or_seats(rows_seats='rows', rows_seats_name=ticket['row']) and
-                        self.reformat_rows_or_seats(rows_seats='seats', rows_seats_name=ticket['seat'])
+                        self.reformat_rows_or_seats(rows_seats='seats', rows_seats_name=ticket['seat']) and
+                    self.reformat_price(int(ticket['price']))
                 ):
                     result_data.append(
                         {

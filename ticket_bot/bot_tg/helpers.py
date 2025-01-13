@@ -50,8 +50,6 @@ def cancel_kb():
 
 def check_valid_filter_format(filter_string: str) -> list[str] | None:
     filter_string: list[str] = [i.lower().strip() for i in filter_string.split(';')]
-    if '' in filter_string:
-        filter_string.remove('')
 
     if len(filter_string) >= 3:
         if '-' in filter_string:
@@ -73,3 +71,22 @@ async def delete_link(user_id: int) -> None:
             if int(_id) == user_id:
                 value[-1] = 'disabled'
     await write_data_to_json(data, change=True)
+
+
+def formated_data(_data: list):
+    all_keys = ['event_name', 'event_start', 'sector_name', 'rows', 'seats', 'price']
+    result = {
+            'event_name': '',
+            'event_start': '',
+            'sector_name': '',
+            'rows': '',
+            'seats': '',
+            'price': ''
+    }
+    for k in all_keys:
+        try:
+            if _data[all_keys.index(k)].strip() != '' and _data[all_keys.index(k)].strip() != 'все значения':
+                result[k] = _data[all_keys.index(k)].strip()
+        except IndexError:
+            break
+    return result
